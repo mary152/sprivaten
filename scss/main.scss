@@ -1,0 +1,31 @@
+//Normalize css
+@import "_normalize";
+
+//General Styles
+@import "_general";
+
+//Main elements
+@import "main/_header";
+@import "main/_menu";
+@import "main/_footer";
+
+//Sections
+@import "sections/_main-screen.scss";
+@import "sections/_why-us.scss";
+@import "sections/_service.scss";
+@import "sections/_testimonial.scss";
+@import "sections/_team.scss";
+@import "sections/_contact-us.scss";
+
+
+//Variables
+@import "_var";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+//-------------------------------//
+
+
+
+
+

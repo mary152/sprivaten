@@ -1,0 +1,174 @@
+.footer {
+	background-color: #252B42;
+
+	&__main {
+		&_top {
+			display: flex;
+			justify-content: space-between;
+			padding: 40px 0;
+			border-bottom: 1px solid #364067;
+		}
+
+		&_logo {	
+			font-size: 24px;
+			line-height: 1.33;
+			font-weight: 700;
+			letter-spacing: .1px;
+			color: #FFFFFF;
+		}
+
+		&_social {
+			display: flex;
+			align-items: center;
+			margin: 0 30px;
+
+			a {
+				margin: 0 10px;
+			}
+		}
+
+		&_row {
+			display: flex;
+			justify-content: space-between;
+			padding: 70px 0;
+			margin: 0 -15px;
+		}
+
+		@media (max-width: 992px) {
+			&_row {
+				flex-wrap: wrap;
+			}
+		}
+
+		@media (max-width: 576px) {
+			&_top {
+				flex-direction: column;
+				border: none;
+			}
+
+			&_logo {
+				margin-bottom: 50px;
+			}
+
+			&_social {
+				margin: 0 -10px;
+			}
+
+			&_row {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+.column {
+	padding: 0 15px;
+
+	&__label {
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: 700;
+		letter-spacing: .1px;
+		color: #FFFFFF;
+		margin-bottom: 20px;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 1.7;
+		font-weight: 600;
+		letter-spacing: .2px;
+		color: #BDBDBD;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__form {
+		display: flex;
+		font-size: 0;
+
+		input {
+			background-color: #F9F9F9;
+			max-width: 205px;
+			border: none;
+			border-radius: 5px 0 0 5px;
+			padding: 15px 20px;
+			font-size: 14px;
+			line-height: 2;
+			font-weight: 400;
+			letter-spacing: .2px;
+			color: #BDBDBD;
+			transition: all .5s ease;
+
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: #fff;
+				transition: all .5s ease;
+			}
+		}
+
+		button {
+			background-color: #FFA62B;
+			border: none;
+			border-radius: 0 10px 10px 0;
+			font-size: 14px;
+			line-height: 2;
+			font-weight: 400;
+			letter-spacing: .2px;
+			color: #ffffff;
+			padding: 15px 25px;
+			transition: all .5s ease;
+			
+			&:hover,
+			&:focus {
+				background-color: #f89811;
+				transition: all .5s ease;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 12px;
+		line-height: 2.3;
+		font-weight: 400;
+		letter-spacing: 0.2px;
+		color: #BDBDBD;
+	}
+
+	@media (max-width: 992px) {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.footer-bottom {
+	background-color: #16697A;
+	padding: 25px 0;
+
+	&__copywrite {
+		text-transform: capitalize;
+		font-size: 14px;
+		line-height: 2.7;
+		font-weight: 600;
+		letter-spacing: .2px;
+		color: #FFFFFF;
+	}
+
+	@media (max-width: 576px) {
+		& {
+			text-align: center;
+		}
+
+		&__copywrite {
+			padding: 0 50px;
+		}
+	}
+}
